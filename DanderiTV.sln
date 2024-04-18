@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{EED79AF8-A5EE-4FA1-BB75-2D6AE838EB32}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{E7CA94E2-A7A5-4505-A233-66BBF8C9E98B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{2D2E5CEB-1C2D-40EC-AB52-48858F78ADF5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApp", "WebApp", "{D8EC4786-ABF1-4BF7-908E-22118C789384}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DanderiTV.Layer.Application", "DanderiTV.Layer.Application\DanderiTV.Layer.Application.csproj", "{09EAE391-C4B0-42A3-BEF8-18932AF3A9E6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DanderiTV.Layer.DataAccess", "DanderiTV.Layer.DataAccess\DanderiTV.Layer.DataAccess.csproj", "{77B8D21E-1330-4500-ACB4-700CAED26B1D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DanderiTV", "DanderiTV\DanderiTV.csproj", "{5F4917FE-A84E-474E-83BB-B0C91A09F615}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09EAE391-C4B0-42A3-BEF8-18932AF3A9E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09EAE391-C4B0-42A3-BEF8-18932AF3A9E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09EAE391-C4B0-42A3-BEF8-18932AF3A9E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09EAE391-C4B0-42A3-BEF8-18932AF3A9E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77B8D21E-1330-4500-ACB4-700CAED26B1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77B8D21E-1330-4500-ACB4-700CAED26B1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77B8D21E-1330-4500-ACB4-700CAED26B1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77B8D21E-1330-4500-ACB4-700CAED26B1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F4917FE-A84E-474E-83BB-B0C91A09F615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F4917FE-A84E-474E-83BB-B0C91A09F615}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F4917FE-A84E-474E-83BB-B0C91A09F615}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F4917FE-A84E-474E-83BB-B0C91A09F615}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E7CA94E2-A7A5-4505-A233-66BBF8C9E98B} = {EED79AF8-A5EE-4FA1-BB75-2D6AE838EB32}
+		{2D2E5CEB-1C2D-40EC-AB52-48858F78ADF5} = {EED79AF8-A5EE-4FA1-BB75-2D6AE838EB32}
+		{D8EC4786-ABF1-4BF7-908E-22118C789384} = {EED79AF8-A5EE-4FA1-BB75-2D6AE838EB32}
+		{09EAE391-C4B0-42A3-BEF8-18932AF3A9E6} = {2D2E5CEB-1C2D-40EC-AB52-48858F78ADF5}
+		{77B8D21E-1330-4500-ACB4-700CAED26B1D} = {E7CA94E2-A7A5-4505-A233-66BBF8C9E98B}
+		{5F4917FE-A84E-474E-83BB-B0C91A09F615} = {D8EC4786-ABF1-4BF7-908E-22118C789384}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {75F20699-4841-427B-B1F9-1D6F627C0AFD}
+	EndGlobalSection
+EndGlobal

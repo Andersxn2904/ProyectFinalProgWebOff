@@ -1,0 +1,67 @@
+﻿@using DanderiTV.Layer.Application.Models.Serie;
+@using DanderiTV.SettingsView
+@model List<MovieViewModel>
+@{
+	ViewData["Title"] = "Series";
+}
+
+
+	<section>
+
+		<div class="container py-4">
+		<h1 class="h1 text-center" id="pageHeaderTitle">YOUR MOVIES</h1>
+		<div class="row mb-3">
+			<div class="col-12 d-flex justify-content-end">
+				<a asp-controller="Movie" asp-action="Create" class="btn btn-outline-danger">Add series</a>
+			</div>
+		</div>
+			@if (Model == null || Model.Count == 0)
+			{
+				<h4>No series added.</h4>
+			}
+			else
+			{
+				<!-- Serie's card-->
+				@foreach (MovieViewModel item in Model)
+				{
+
+
+				<article class="postcard @GetViewMode.ViewMode blue">
+						<a class="postcard__img_link" href="#">
+							<img class="postcard__img" src="@item.ImagePath" alt="Image Title" />
+						</a>
+						<div class="postcard__text">
+							<h1 class="postcard__title blue"><a href="#">@item.Title</a></h1>
+							<div class="postcard__subtitle small">
+								<time datetime="2020-05-25 12:00:00">
+									<i class="fas fa-calendar-alt mr-2"></i>@item.Year
+								</time>
+							</div>
+							<div class="postcard__bar"></div>
+
+							<ul class="postcard__tagbox">
+
+								<li class="tag__item"><i class="fas fa-tag mr-2"></i>@item.Director </li>
+						
+								<li class="tag__item play blue">
+									<a asp-controller="Movie" asp-action="Edit" asp-route-id="@item.ID"><i class="fas fa-play mr-2"></i>Edit</a>
+								</li>
+								<li class="tag__item play blue">
+								<a asp-controller="Home" asp-action="ViewTrailer" asp-route-ID="@item.ID"><i class="fas fa-play mr-2"></i>Play Trailer</a>
+								</li>
+							</ul>
+						</div>
+					</article>
+
+
+
+
+				}
+
+			}
+		</div>
+	</section>
+
+
+
+

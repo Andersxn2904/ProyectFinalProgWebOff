@@ -1,0 +1,12 @@
+﻿@using DanderiTV.Layer.Application.Models.Serie;
+@model MovieViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>@Model.Title</h1>
+
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe width="887" height="499" src="@Model.TrailerPath" title="@Model.Title" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
