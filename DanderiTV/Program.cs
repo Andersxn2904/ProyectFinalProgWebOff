@@ -19,6 +19,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<IServiceProvider, ServiceProvider>();
 builder.Services.AddSingleton<DapperContext>();
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddSingleton<DatabaseSetting>();
 builder.Services.AddScoped<IMigrationRunner, MigrationRunner>();
 builder.Services.AddApplicationLayer();

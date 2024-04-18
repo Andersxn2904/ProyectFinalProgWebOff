@@ -17,6 +17,7 @@ namespace DanderiTV.Layer.Application
             services.AddTransient<IMovieRepository, MovieRepository>();
             services.AddTransient<IActorRepository, ActorRepository>();
             services.AddTransient<IDirectorRepository, DirectorRepository>();
+            services.AddTransient<IUserRepository, UserRepository>();
 
             #endregion
 
@@ -24,6 +25,7 @@ namespace DanderiTV.Layer.Application
             services.AddTransient<IMovieService, MovieService>();
             services.AddTransient<IActorService, ActorsService>();
             services.AddTransient<IDirectorService, DirectorService>();
+            services.AddTransient<IUserService, UserService>();
             #endregion
 
         }

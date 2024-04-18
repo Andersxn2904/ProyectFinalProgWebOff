@@ -20,7 +20,7 @@ namespace DanderiTV.Layer.Application.Repositories
 
         }
 
-        public async Task<T> Add(T entity)
+        public virtual async Task<T> Add(T entity)
         {
             try
             {
@@ -44,7 +44,7 @@ namespace DanderiTV.Layer.Application.Repositories
             }
         }
 
-        public async Task<bool> Delete(T entity)
+        public virtual async Task<bool> Delete(T entity)
         {
             int rowsEffected = 0;
             try
@@ -61,7 +61,7 @@ namespace DanderiTV.Layer.Application.Repositories
             return rowsEffected > 0 ? true : false;
         }
 
-        public async Task<List<T>> GetAll()
+        public virtual async Task<List<T>> GetAll()
         {
                  IEnumerable<T> result = null;
 
