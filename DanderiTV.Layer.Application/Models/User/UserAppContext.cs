@@ -2,7 +2,7 @@
 
 namespace DanderiTV.Layer.Application.Models.User
 {
-    public class UserAppCotext
+    public class UserAppContext
     {
         public string ID { get; set; }
         public string UserName { get; set; }

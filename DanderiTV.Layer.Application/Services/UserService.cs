@@ -20,9 +20,9 @@ namespace DanderiTV.Layer.Application.Services
 
         }
 
-        public async Task<UserAppCotext> Login(SignInRequest signInRequest)
+        public async Task<UserAppContext> Login(SignInRequest signInRequest)
         {
-            UserAppCotext UserResponse = new();
+            UserAppContext UserResponse = new();
             UserResponse.HasError = false;
             signInRequest.Password = Hasherpassword.HashPassword( signInRequest.Password);
 

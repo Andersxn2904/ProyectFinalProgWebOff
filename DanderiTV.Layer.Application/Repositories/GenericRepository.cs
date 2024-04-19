@@ -94,7 +94,7 @@ namespace DanderiTV.Layer.Application.Repositories
             return result.FirstOrDefault();
         }
 
-        public async Task<T> Update(T entity, int Id)
+        public virtual async Task<T> Update(T entity, int Id)
         {
             try
             {

@@ -1,4 +1,5 @@
-﻿using DanderiTV.Layer.Application.Models.User;
+﻿using DanderiTV.Layer.Application.Models.Director;
+using DanderiTV.Layer.Application.Models.User;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,8 @@ namespace DanderiTV.Layer.Application.Interfaces.Services
     public interface IUserService
     {
         Task<RegisterResponse> RegisterUserApp(RegisterRequest registerRequest);
-        Task<UserAppCotext> Login(SignInRequest signInRequest);
+        Task<UserAppContext> Login(SignInRequest signInRequest);
+
+       
     }
 }
